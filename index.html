@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Прототип сайта: разработка и развёртывание</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<style type="text/css">
+.only-head h2 {
+	font-size: 100px;
+}
+
+	</style>
+</head>
+<body class="list debug">
+	<header class="caption">
+		<h1>Прототип сайта: разработка и развёртывание</h1>
+		<p><a href="http://noteskeeper.ru/about/">Владимир Кузнецов</a>, Engine6</p>
+	</header>
+
+	<section class="slide shout only-head"><div>
+		<h2>Прототип сайта:<br>разработка и развёртывание</h2>
+	</div></section>
+
+	<section class="slide shout only-head"><div>
+		<h2>Перемены в<br>моей карьере</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Одно из наших правил</h2>
+		<p>Показывать заказчику готовые части как можно быстрее.</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Задачи</h2>
+		<ul>
+			<li>командная работа над прототипом;</li>
+			<li>простая процедура развёртывания.</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Сборка проекта</h2>
+		<p>Хоть нам и нужно в конечном итоге получить статические HTML-,
+			CSS- и JS-файлы, но «собирать» их можно из совершенно других форматов.</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Сборка JavaScript</h2>
+		<p>Отдельные компоненты “склеиваются” в один файл,
+			который потом обрабатывается минификатором</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Сборка CSS</h2>
+		<p>Файлы стилей генерируются с помощью препроцессоров из LESS, Stylus и т.п.</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Сборка HTML</h2>
+		<p>Статические файлы генерируются помощью шаблонизатора из
+			отдельных страниц, видждетов и раскладок.</p>
+	</div></section>
+
+	<section class="slide shout only-head"><div>
+		<h2>Наши первые шаги</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Assemble</h2>
+		<p>Генератор статических сайтов на Node.js</p>
+		<p><a href="http://assemble.io">http://assemble.io</a></p>
+		<p>Есть <a href="https://github.com/assemble/grunt-init-assemble">шаблон для Grunt</a> и
+			<a href="https://github.com/assemble/generator-assemble">генератор для Yeoman</a>.
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Assemble</h2>
+		<ul>
+			<li>запускается как Grunt-задача;</li>
+			<li>использует шаблоны Handlebars (или любые другие);</li>
+			<li>содержит набор готовых хелперов (легко написать свой);</li>
+			<li>поддерживает раскладки любой вложенности;</li>
+			<li>позволяет повторно использовать фрагменты страниц и
+				выносить данные из разметки.</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/settings_hbs.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/two_columns_hbs.png" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/git_hooks.gif" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/git_ftp.gif" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
+
+
+
+	<section class="slide"><div>
+		<h2>List navigation</h2>
+		<ol>
+			<li>Ennui keffiyeh thundercats</li>
+			<li class="next">Jean shorts biodiesel</li>
+			<li class="next">Terry richardson, swag blog</li>
+			<li class="next">Locavore umami vegan helvetica</li>
+			<li class="next">Fingerstache kale chips</li>
+		</ol>
+		<p class="next">Before they sold out master</p>
+	</div></section>
+
+	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.js"></script>
+	<!-- Copyright © 2013 Vladimir Kuznetsov, Engine6 -->
+</body>
+</html>
