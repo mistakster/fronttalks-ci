@@ -35,8 +35,8 @@
 	<section class="slide"><div>
 		<h2>Задачи</h2>
 		<ul>
-			<li>командная работа над прототипом;</li>
-			<li>простая процедура развёртывания.</li>
+			<li class="next">командная работа над прототипом;</li>
+			<li class="next">простая процедура развёртывания.</li>
 		</ul>
 	</div></section>
 
@@ -79,12 +79,50 @@
 		<h2>Assemble</h2>
 		<ul>
 			<li>запускается как Grunt-задача;</li>
-			<li>использует шаблоны Handlebars (или любые другие);</li>
-			<li>содержит набор готовых хелперов (легко написать свой);</li>
-			<li>поддерживает раскладки любой вложенности;</li>
-			<li>позволяет повторно использовать фрагменты страниц и
+			<li class="next">использует шаблоны Handlebars (или любые другие);</li>
+			<li class="next">содержит набор готовых хелперов (легко написать свой);</li>
+			<li class="next">поддерживает раскладки любой вложенности;</li>
+			<li class="next">позволяет повторно использовать фрагменты страниц и
 				выносить данные из разметки.</li>
 		</ul>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/page_hbs.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/page_hbs_next.png" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Мета-данные страницы</h2>
+		<p>YAML front matter</p>
+		<ul>
+			<li><code>layout</code></li>
+			<li><code>published</code></li>
+			<li><code>category</code>, <code>categories</code> и <code>tags</code></li>
+		</li>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/page_with_data_hbs.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/page_with_data_hbs_next.png" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Мета-данные страницы</h2>
+		<ul>
+			<li>Gruntfile.js</li>
+			<li>из внешних JSON- или YAML-файлов</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/assemble_layout.png" alt="">
 	</div></section>
 
 	<section class="slide cover w"><div>
@@ -92,8 +130,70 @@
 	</div></section>
 
 	<section class="slide cover w"><div>
+		<img src="images/settings_hbs_next.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
 		<img src="images/two_columns_hbs.png" alt="">
 	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="images/two_columns_hbs_next.png" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Встроенные переменные</h2>
+		<ul>
+			<li><code>basename</code> или <code>pagename</code></li>
+			<li><code>filename</code></li>
+			<li><code>dirname</code></li>
+			<li><code>ext</code></li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Хелперы</h2>
+		<p>Блочные: <code>{{#each}}</code>, <code>{{#if}}</code> и т.п.</p>
+		<pre class="next">
+			<code><mark>{{#is basename &quot;index&quot;}}</mark></code>
+			<code>&nbsp;&nbsp;&lt;span&gt;Site name&lt;/span&gt;</code>
+			<code><mark>{{else}}</mark></code>
+			<code>&nbsp;&nbsp;&lt;a href=&quot;/&quot;&gt;Site name&lt;/a&gt;</code>
+			<code><mark>{{/is}}</mark></code>
+		</pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Хелперы</h2>
+		<p>Функции: <code>{{default}}</code>, <code>{{formatDate}}</code> и т.п.</p>
+		<pre class="next">
+			<code>&lt;title&gt;<mark>{{default title basename}}</mark>&lt;/title&gt;</code>
+			<code>&lt;script src=&quot;/all.js?v=<mark>{{now "%d%H%M%S"}}</mark>&quot;&gt;&lt;/script&gt;</code>
+		</pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Хелперы</h2>
+		<pre>
+			<code>module.exports.register =</code>
+			<code>&nbsp;function (Handlebars, options) {</code>
+			<code>&nbsp;&nbsp;Handlebars.registerHelper(&quot;foo&quot;, function (str) {</code>
+			<code>&nbsp;&nbsp;&nbsp;return &quot;---=== &quot; + str + &quot; ===---&quot;;</code>
+			<code>&nbsp;&nbsp;});</code>
+			<code>&nbsp;};</code>
+		</pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2></h2>
+		<p></p>
+	</div></section>
+
 
 	<section class="slide"><div>
 		<h2></h2>
