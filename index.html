@@ -60,7 +60,7 @@
 	<section class="slide"><div>
 		<h2>Сборка HTML</h2>
 		<p>Статические файлы генерируются помощью шаблонизатора из
-			отдельных страниц, видждетов и раскладок.</p>
+			отдельных страниц, повторно используемых фрагментов и раскладок.</p>
 	</div></section>
 
 	<section class="slide shout only-head"><div>
@@ -185,20 +185,56 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2></h2>
-		<p></p>
+		<h2>Паршалы</h2>
+		<p>Повторно используемые фрагменты страниц.</p>
+		<p class="next">Могут вызываться в разных контекстах</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Запуск задач с помощью Grunt</h2>
+		<div>
+			<p>$ <code>grunt</code><br>
+				одноразовый запуск сборки всего проекта<p>
+		</div>
+		<div>
+			<p>$ <code>grunt watch</code><br>
+				запуск сборки и отслеживание изменения в файлах<p>
+		</div>
+		<div>
+			<p>$ <code>grunt server</code><br>
+				запуск HTTP-сервера и отслеживание изменений с livereload<p>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Пример Gruntfile.js</h2>
+		<p><a href="https://github.com/doneright/assemble">https://github.com/doneright/assemble</a></p>
+		<ul>
+			<li>сборка HTML из шаблонов;</li>
+			<li>компиляция LESS-файлов;</li>
+			<li>склеивание и минификация скриптов;</li>
+			<li>watcher, сервер и livereload.</li>
+		</ul>
+	</div></section>	
+
+	<section class="slide shout"><div>
+		<h2>Git</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Git</h2>
+		<p>Сторонние сервисы (<a href="https://github.com">GitHub</a>, <a href="http://www.codebasehq.com">CodeBase</a> и др.)</p>
+		<p>Свой Git-сервер (Gitosis)</p>
+		<p class="next">Один разработчик может обойтись и без сервера!<p>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2></h2>
 		<p></p>
-	</div></section>
+	</div></section>	
 
 
-	<section class="slide"><div>
-		<h2></h2>
-		<p></p>
-	</div></section>
+
 
 	<section class="slide cover w"><div>
 		<img src="images/git_hooks.gif" alt="">
@@ -219,10 +255,20 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2></h2>
-		<p></p>
+		<h2>Заключение</h2>
+		<ul>
+			<li>Узнали как собрать статический сайт из страниц, повторно используемых фрагментов и раскладок.</li>
+			<li>Узнали как выложить собранный сайт на сервер</li>
+		</li>
 	</div></section>
 
+	<section class="slide"><div>
+		<h2>Спасибо за внимание</h2>
+		<p><strong>Владимир Кузнецов</strong><br>
+			Twitter: <a href="http://twitter.com/mista_k">@mista_k</a><br>
+			Блог: <a href="http://noteskeeper.ru">noteskeeper.ru</a></p>
+		<p>Презентация: <a href="#">bit.ly/123</a>
+	</div></section>
 
 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
 	<!--
