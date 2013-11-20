@@ -13,7 +13,7 @@
 
 	</style>
 </head>
-<body class="list debug">
+<body class="list">
 	<header class="caption">
 		<h1>Прототип сайта: разработка и развёртывание</h1>
 		<p><a href="http://noteskeeper.ru/about/">Владимир Кузнецов</a>, Engine6</p>
@@ -29,7 +29,7 @@
 
 	<section class="slide"><div>
 		<h2>Одно из наших правил</h2>
-		<p>Показывать заказчику готовые части как можно быстрее.</h2>
+		<p>Показывать заказчику готовые части по мере готовности.</p>
 	</div></section>
 
 	<section class="slide"><div>
@@ -48,18 +48,18 @@
 
 	<section class="slide"><div>
 		<h2>Сборка JavaScript</h2>
-		<p>Отдельные компоненты “склеиваются” в один файл,
-			который потом обрабатывается минификатором</p>
+		<p>Отдельные компоненты «склеиваются» в один файл,
+			который потом обрабатывается минификатором.</p>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2>Сборка CSS</h2>
-		<p>Файлы стилей генерируются с помощью препроцессоров из LESS, Stylus и т.п.</p>
+		<p>Файлы стилей генерируются с помощью препроцессоров<br>LESS, Stylus и т.п.</p>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2>Сборка HTML</h2>
-		<p>Статические файлы генерируются помощью шаблонизатора из
+		<p>Файлы с разметкой генерируются шаблонизатором из
 			отдельных страниц, повторно используемых фрагментов и раскладок.</p>
 	</div></section>
 
@@ -72,7 +72,7 @@
 		<p>Генератор статических сайтов на Node.js</p>
 		<p><a href="http://assemble.io">http://assemble.io</a></p>
 		<p>Есть <a href="https://github.com/assemble/grunt-init-assemble">шаблон для Grunt</a> и
-			<a href="https://github.com/assemble/generator-assemble">генератор для Yeoman</a>.
+			<a href="https://github.com/assemble/generator-assemble">генератор для Yeoman</a>.</p>
 	</div></section>
 
 	<section class="slide"><div>
@@ -115,7 +115,9 @@
 
 	<section class="slide"><div>
 		<h2>Мета-данные страницы</h2>
+		Шаблон страницы может получить данные из:
 		<ul>
+			<li>YAML front matter</li>
 			<li>Gruntfile.js</li>
 			<li>из внешних JSON- или YAML-файлов</li>
 		</ul>
@@ -262,8 +264,9 @@
 	<section class="slide"><div>
 		<h2>Заключение</h2>
 		<ul>
-			<li>Узнали как собрать статический сайт из страниц, повторно используемых фрагментов и раскладок.</li>
-			<li>Узнали как выложить собранный сайт на сервер</li>
+			<li>Узнали как собрать статический сайт из страниц,
+				повторно используемых фрагментов и раскладок.</li>
+			<li>Узнали как выложить собранный сайт на сервер.</li>
 		</ul>
 	</div></section>
 
